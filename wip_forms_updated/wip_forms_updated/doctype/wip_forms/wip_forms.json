@@ -1,0 +1,616 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:naming_series",
+ "creation": "2024-02-22 11:48:58.036063",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "client_details_tab",
+  "client_name",
+  "client_representative_name",
+  "mobile",
+  "email",
+  "deal_name",
+  "cost_center",
+  "column_break_ug5rn",
+  "related_counter_party_wip",
+  "branch",
+  "industry_of_client",
+  "source",
+  "business_group_of_client",
+  "tab_break_j7c9n",
+  "for_agency_section",
+  "property_location",
+  "type_of_assignment",
+  "floor",
+  "buildingwing",
+  "column_break_izjgq",
+  "brief_description_of_transaction",
+  "payout",
+  "flat_no",
+  "section_break_w4i15",
+  "area_sq_mtr",
+  "column_break_bbrny",
+  "area_sq_ft",
+  "column_break_obwjc",
+  "area_acres",
+  "column_break_2pb7g",
+  "seats",
+  "section_break_1buvo",
+  "rate_per_unit__rate_per_unit_per_month_lease",
+  "column_break_intmn",
+  "estimated_tenure_for_lease_month",
+  "column_break_zmsjk",
+  "column_break_l6uth",
+  "for_advisory_section",
+  "type_of_assignment2",
+  "street_namelocality",
+  "fees_tab",
+  "fees_terms_and_letter_status",
+  "fees__deal_value",
+  "column_break_eqvwh",
+  "fees_no_of_months_for_leased",
+  "fees_lump_sum_fees",
+  "section_break_wvilm",
+  "fees_milstone",
+  "deal_values_and_fees_details_section",
+  "deal_type",
+  "area_unit",
+  "rate_unit",
+  "conversion_factor_between_area_and_rate",
+  "area",
+  "rate",
+  "rate_per_month",
+  "expected_tenure_in_months",
+  "no_of_seats",
+  "rate_per_month_per_seat",
+  "deal_value",
+  "fee_terms_section",
+  "_of_deal_value",
+  "no_of_months_of_rentals",
+  "fees_amount",
+  "lumpsum_fees",
+  "transaction_details_tab",
+  "wip_status",
+  "transaction_category",
+  "commercial_team_remark",
+  "column_break_qklxy",
+  "billing_month",
+  "latest_updates",
+  "bis_no",
+  "stages",
+  "section_break_sgunn",
+  "sharing_with_other_teams",
+  "transaction_and_assignment_udpates_tab",
+  "for_agency2_section",
+  "wip_status2",
+  "category",
+  "for_advisory2_section",
+  "wip_status1",
+  "category2",
+  "reason_for_nonactive",
+  "latest_updates_on_the_transactionassignment_section",
+  "department_status_update",
+  "commercial_team_remarks",
+  "bis_forms_nos_linked",
+  "status",
+  "naming_series"
+ ],
+ "fields": [
+  {
+   "fieldname": "client_details_tab",
+   "fieldtype": "Tab Break",
+   "label": "Client Details"
+  },
+  {
+   "fieldname": "client_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Client Name",
+   "options": "Customer",
+   "reqd": 1
+  },
+  {
+   "fieldname": "client_representative_name",
+   "fieldtype": "Data",
+   "label": "Client Representative Name"
+  },
+  {
+   "fieldname": "mobile",
+   "fieldtype": "Data",
+   "label": "Mobile"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email"
+  },
+  {
+   "fieldname": "deal_name",
+   "fieldtype": "Data",
+   "is_virtual": 1,
+   "label": "Deal Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "cost_center",
+   "fieldtype": "Data",
+   "label": "Cost Center"
+  },
+  {
+   "fieldname": "column_break_ug5rn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "related_counter_party_wip",
+   "fieldtype": "Link",
+   "label": "Related Counter Party WIP",
+   "options": "WIP Forms"
+  },
+  {
+   "fieldname": "branch",
+   "fieldtype": "Data",
+   "label": "Branch"
+  },
+  {
+   "fieldname": "industry_of_client",
+   "fieldtype": "Link",
+   "label": "Industry of Client",
+   "options": "Industry"
+  },
+  {
+   "fieldname": "source",
+   "fieldtype": "Link",
+   "label": "Source",
+   "options": "Source"
+  },
+  {
+   "fieldname": "business_group_of_client",
+   "fieldtype": "Link",
+   "label": "Business Group of Client",
+   "options": "Business Group"
+  },
+  {
+   "fieldname": "tab_break_j7c9n",
+   "fieldtype": "Tab Break",
+   "label": "Property Details"
+  },
+  {
+   "fieldname": "for_agency_section",
+   "fieldtype": "Section Break",
+   "label": "For Agency"
+  },
+  {
+   "fieldname": "property_location",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Property Location",
+   "reqd": 1
+  },
+  {
+   "fieldname": "type_of_assignment",
+   "fieldtype": "Link",
+   "label": "Type of Assignment",
+   "options": "Type of Assignment"
+  },
+  {
+   "fieldname": "floor",
+   "fieldtype": "Data",
+   "label": "Floor"
+  },
+  {
+   "fieldname": "buildingwing",
+   "fieldtype": "Data",
+   "label": "Building/Wing"
+  },
+  {
+   "fieldname": "column_break_izjgq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "brief_description_of_transaction",
+   "fieldtype": "Select",
+   "label": "Brief Description of Transaction",
+   "options": "\nLease\nOutright\nBTS"
+  },
+  {
+   "fieldname": "payout",
+   "fieldtype": "Data",
+   "label": "Payout"
+  },
+  {
+   "fieldname": "flat_no",
+   "fieldtype": "Data",
+   "label": "Flat No."
+  },
+  {
+   "fieldname": "section_break_w4i15",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "area_sq_mtr",
+   "fieldtype": "Data",
+   "label": "Area (Sq. Mtr.)"
+  },
+  {
+   "fieldname": "column_break_bbrny",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "area_sq_ft",
+   "fieldtype": "Data",
+   "label": "Area (Sq. Ft.)"
+  },
+  {
+   "fieldname": "column_break_obwjc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "area_acres",
+   "fieldtype": "Data",
+   "label": "Area (Acres)"
+  },
+  {
+   "fieldname": "column_break_2pb7g",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "seats",
+   "fieldtype": "Int",
+   "label": "Seats"
+  },
+  {
+   "fieldname": "section_break_1buvo",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "rate_per_unit__rate_per_unit_per_month_lease",
+   "fieldtype": "Currency",
+   "label": "Rate per Unit / Rate per unit per month (Lease)"
+  },
+  {
+   "fieldname": "column_break_intmn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "estimated_tenure_for_lease_month",
+   "fieldtype": "Int",
+   "label": "Estimated Tenure for Lease (Month)"
+  },
+  {
+   "fieldname": "column_break_zmsjk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_l6uth",
+   "fieldtype": "Currency",
+   "label": "Deal Value (in Mn)"
+  },
+  {
+   "fieldname": "for_advisory_section",
+   "fieldtype": "Section Break",
+   "label": "For Advisory"
+  },
+  {
+   "fieldname": "type_of_assignment2",
+   "fieldtype": "Link",
+   "label": "Type of Assignment",
+   "options": "Type of Assignment"
+  },
+  {
+   "fieldname": "street_namelocality",
+   "fieldtype": "Data",
+   "label": "Street Name/Locality"
+  },
+  {
+   "fieldname": "fees_tab",
+   "fieldtype": "Tab Break",
+   "label": "Fees"
+  },
+  {
+   "fieldname": "fees_terms_and_letter_status",
+   "fieldtype": "Link",
+   "label": "Fees terms and Letter Status",
+   "options": "Status"
+  },
+  {
+   "fieldname": "fees__deal_value",
+   "fieldtype": "Currency",
+   "label": "Fees % Deal Value"
+  },
+  {
+   "fieldname": "column_break_eqvwh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "fees_no_of_months_for_leased",
+   "fieldtype": "Int",
+   "label": "Fees No of Months (For Leased)"
+  },
+  {
+   "fieldname": "fees_lump_sum_fees",
+   "fieldtype": "Currency",
+   "label": "Fees Lump Sum Fees"
+  },
+  {
+   "fieldname": "section_break_wvilm",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "fees_milstone",
+   "fieldtype": "Table",
+   "label": "Fees Milstone",
+   "options": "Fees Milestone"
+  },
+  {
+   "fieldname": "deal_values_and_fees_details_section",
+   "fieldtype": "Section Break",
+   "label": "Deal Values and Fees Details"
+  },
+  {
+   "fieldname": "deal_type",
+   "fieldtype": "Select",
+   "label": "Deal Type",
+   "options": "\nOutright/Sale\nLease\nCo-working/Workstations"
+  },
+  {
+   "depends_on": "eval:doc.deal_type==\"Outright/Sale\";",
+   "fieldname": "area_unit",
+   "fieldtype": "Link",
+   "label": "Area Unit",
+   "options": "UOM",
+   "reqd": 1
+  },
+  {
+   "depends_on": "eval:doc.deal_type==\"Outright/Sale\";",
+   "fieldname": "rate_unit",
+   "fieldtype": "Link",
+   "label": "Rate Unit",
+   "options": "UOM",
+   "reqd": 1
+  },
+  {
+   "depends_on": "eval:doc.deal_type=='Outright/Sale'",
+   "fieldname": "conversion_factor_between_area_and_rate",
+   "fieldtype": "Data",
+   "is_virtual": 1,
+   "label": "Conversion factor between area and rate",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:doc.deal_type=='Outright/Sale';",
+   "fieldname": "area",
+   "fieldtype": "Float",
+   "label": "Area"
+  },
+  {
+   "depends_on": "eval:doc.deal_type==\"Outright/Sale\";",
+   "fieldname": "rate",
+   "fieldtype": "Float",
+   "label": "Rate"
+  },
+  {
+   "depends_on": "eval:doc.deal_type=='Lease';",
+   "fieldname": "rate_per_month",
+   "fieldtype": "Currency",
+   "label": "Rate per month"
+  },
+  {
+   "depends_on": "eval:doc.deal_type=='Lease'|| doc.deal_type=='Co-working/Workstations';",
+   "fieldname": "expected_tenure_in_months",
+   "fieldtype": "Int",
+   "label": "Expected Tenure in Months"
+  },
+  {
+   "depends_on": "eval:doc.deal_type=='Co-working/Workstations';",
+   "fieldname": "no_of_seats",
+   "fieldtype": "Int",
+   "label": "No of Seats"
+  },
+  {
+   "depends_on": "eval:doc.deal_type=='Co-working/Workstations';",
+   "fieldname": "rate_per_month_per_seat",
+   "fieldtype": "Currency",
+   "label": "Rate per month per seat"
+  },
+  {
+   "fieldname": "deal_value",
+   "fieldtype": "Currency",
+   "is_virtual": 1,
+   "label": "Deal Value"
+  },
+  {
+   "fieldname": "fee_terms_section",
+   "fieldtype": "Section Break",
+   "label": "Fee Terms"
+  },
+  {
+   "depends_on": "eval:doc.deal_type=='Outright/Sale';",
+   "fieldname": "_of_deal_value",
+   "fieldtype": "Float",
+   "label": "% of Deal Value"
+  },
+  {
+   "depends_on": "eval: doc.deal_type == 'Lease' || doc.deal_type == 'Co-working/Workstations';\n",
+   "fieldname": "no_of_months_of_rentals",
+   "fieldtype": "Int",
+   "label": "No of months' of rentals"
+  },
+  {
+   "fieldname": "fees_amount",
+   "fieldtype": "Currency",
+   "is_virtual": 1,
+   "label": "Fees Amount"
+  },
+  {
+   "fieldname": "lumpsum_fees",
+   "fieldtype": "Currency",
+   "label": "Lumpsum Fees"
+  },
+  {
+   "fieldname": "transaction_details_tab",
+   "fieldtype": "Tab Break",
+   "label": "Transaction Details"
+  },
+  {
+   "fieldname": "wip_status",
+   "fieldtype": "Select",
+   "label": "WIP Status",
+   "options": "\nStatus 1\nStatus 2"
+  },
+  {
+   "fieldname": "transaction_category",
+   "fieldtype": "Select",
+   "label": "Transaction Category",
+   "options": "\nCategory 1\nCategory 2"
+  },
+  {
+   "fieldname": "commercial_team_remark",
+   "fieldtype": "Text",
+   "label": "Commercial Team Remark"
+  },
+  {
+   "fieldname": "column_break_qklxy",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "billing_month",
+   "fieldtype": "Select",
+   "label": "Billing Month",
+   "options": "\nJanuary\nFebruary\nMarch\nApril\nMay\nJune\nJuly\nAugust\nSeptember\nOctober\nNovember\nDecember"
+  },
+  {
+   "fieldname": "latest_updates",
+   "fieldtype": "Data",
+   "label": "Latest Updates"
+  },
+  {
+   "fieldname": "bis_no",
+   "fieldtype": "Data",
+   "label": "BIS No."
+  },
+  {
+   "fieldname": "stages",
+   "fieldtype": "Table",
+   "label": "Stages",
+   "options": "Stages"
+  },
+  {
+   "fieldname": "section_break_sgunn",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "sharing_with_other_teams",
+   "fieldtype": "Table",
+   "label": "Sharing with other teams",
+   "options": "Sharing With Other Teams"
+  },
+  {
+   "fieldname": "transaction_and_assignment_udpates_tab",
+   "fieldtype": "Tab Break",
+   "label": "Transaction and Assignment Udpates"
+  },
+  {
+   "fieldname": "for_agency2_section",
+   "fieldtype": "Section Break",
+   "label": "For Agency"
+  },
+  {
+   "fieldname": "wip_status2",
+   "fieldtype": "Select",
+   "label": "WIP Status",
+   "options": "\nStatus 1\nStatus 2"
+  },
+  {
+   "fieldname": "category",
+   "fieldtype": "Select",
+   "label": "Category",
+   "options": "\nCategory 1\nCategory 2"
+  },
+  {
+   "fieldname": "for_advisory2_section",
+   "fieldtype": "Section Break",
+   "label": "For Advisory"
+  },
+  {
+   "fieldname": "wip_status1",
+   "fieldtype": "Select",
+   "label": "WIP Status",
+   "options": "\nStatus 1\nStatus 2"
+  },
+  {
+   "fieldname": "category2",
+   "fieldtype": "Select",
+   "label": "Category",
+   "options": "\nCategory 1\nCategory 2"
+  },
+  {
+   "fieldname": "reason_for_nonactive",
+   "fieldtype": "Text",
+   "label": "Reason for Nonactive"
+  },
+  {
+   "fieldname": "latest_updates_on_the_transactionassignment_section",
+   "fieldtype": "Section Break",
+   "label": "Latest Updates on the transaction/assignment"
+  },
+  {
+   "fieldname": "department_status_update",
+   "fieldtype": "Long Text",
+   "label": "Department Status Update"
+  },
+  {
+   "fieldname": "commercial_team_remarks",
+   "fieldtype": "Long Text",
+   "label": "Commercial team remarks"
+  },
+  {
+   "fieldname": "bis_forms_nos_linked",
+   "fieldtype": "Link",
+   "label": "BIS Forms Nos. Linked",
+   "options": "BIS Form Numbers"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "\nMet with MrX\nplans shared by Mr X\nappreached Buyer and discussed initial discussion\ninitial terms decided\nMou signed\nDD Started\nLitigation Found Out\nLitigation Setteled\nAgreement to be sign off\nAgreement Signed"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Naming Series",
+   "options": "WIP-Form.-"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-03-05 14:58:51.364389",
+ "modified_by": "Administrator",
+ "module": "Wip Forms Updated",
+ "name": "WIP Forms",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}
